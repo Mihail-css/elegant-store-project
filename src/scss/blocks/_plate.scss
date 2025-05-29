@@ -1,0 +1,100 @@
+.plate {
+    padding-bottom: 50%;
+    position: relative;
+    background-color: #f3f5f7;
+
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &--01 {
+        background-image: url(./../img/collection/01.jpg);
+
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            background-image: url("./../img/collection/01@2x.jpg");
+        }
+
+
+    }
+
+    &--02 {
+        background-image: url(./../img/collection/02.jpg);
+
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            background-image: url("./../img/collection/02@2x.jpg");
+        }
+
+    }
+
+    &--03 {
+        background-image: url(./../img/collection/03.jpg);
+
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            background-image: url("./../img/collection/03@2x.jpg");
+        }
+
+    }
+
+}
+
+.plate--tall {
+    grid-row: 1/3;
+
+}
+
+.plate__content {
+    position: absolute;
+    left: 32px;
+    bottom: 40px;
+    right: 32px;
+
+    /* Tablet */
+    @media (max-width:1184px) {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+    }
+
+}
+
+.plate__title {
+    margin-bottom: 12px;
+    font-size: 34px;
+    font-weight: 500;
+    color: #121212;
+    line-height: 1.117;
+    letter-spacing: -0.6px;
+
+    /* Tablet */
+    @media (max-width:1184px) {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+
+}
+
+.plate__link {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+
+    color: #121212;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: -0.4px;
+
+    border-bottom: 1px solid #121212;
+
+    /* Tablet */
+    @media (max-width:1184px) {
+     font-size: 14px;
+    }
+
+}

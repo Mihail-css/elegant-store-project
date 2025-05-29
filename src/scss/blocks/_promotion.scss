@@ -1,0 +1,144 @@
+.promotion {
+    position: relative;
+    background-color: rgb(255, 171, 0, 0.4);
+    display: grid;
+    gap: 24px;
+
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background-color: #999;
+        background-image: url(./../img/promotion/promotion-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mediaBg () {
+            background-image: url(./../img/promotion/promotion-bg@2x.jpg);
+        }
+
+        /* Mobile */
+        @media (max-width: 820px) {
+            // display: none;
+            position: static;
+            height: 367px;
+            width: 100%;
+
+        }
+
+    }
+
+}
+
+.promotion__container {
+
+    padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+
+    padding-right: calc((100% - var(--container-width)) / 2);
+
+    /* Tablet */
+    @media (max-width:1184px) {
+
+        padding-right: var(--container-padding);
+    }
+
+    /* Mobile */
+    @media (max-width: 820px) {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+
+}
+
+.promotion__desc {
+    display: grid;
+    gap: 16px;
+
+}
+
+.promotion__content {
+
+    padding: 100px 0;
+    padding-left: 72px;
+
+    display: grid;
+    gap: 24px;
+
+    /* Tablet */
+    @media (max-width:1184px) {
+        padding: 50px 0;
+        padding-left: 32px;
+
+    }
+
+    /* Mobile */
+    @media (max-width: 820px) {
+        padding: 28px 0;
+
+        justify-content: center;
+
+    }
+
+}
+
+.promotion__tagline {
+
+    color: #377DFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+
+}
+
+.promotion__title {
+    font-family: var(--font-accent);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #121212;
+
+    /* Mobile */
+    @media (max-width: 820px) {
+        font-size: 34px;
+    }
+
+}
+
+
+.promotion__text {
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #121212;
+
+    /* Mobile */
+    @media (max-width: 820px) {
+        font-size: 14px;
+    }
+}
+
+
+.promotion__exspires {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #141718;
+
+}
+
+.promotion__timer {
+    display: grid;
+    gap: 12px;
+
+}

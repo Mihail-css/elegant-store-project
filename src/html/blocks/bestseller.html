@@ -1,0 +1,21 @@
+<div class="bestseller">
+    <div class="container">
+        <div class="bestseller__title">
+            <div class="headline-4">
+
+                <h2 class="headline-4">
+                    Бестселлер
+                </h2>
+
+            </div>
+        </div>
+
+        <div class="bestseller__cards">
+
+            @@loop('templates/card.html', './data/bestseller.json')
+
+        </div>
+
+    </div>
+
+</div>
